@@ -2,7 +2,7 @@
   margin:0;
   padding: 0;
   box-sizing: border-box;
-  font-weight: 700;
+  font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -48,7 +48,7 @@ body{
 .question{
   color: white;
   border: 2px solid yellow;
-  background-color: #000000;
+  background-color: #443d3d;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 12px;
@@ -57,6 +57,11 @@ body{
   justify-content: center;
   align-items: center;
   height: 60px;
+  cursor:pointer;
+}
+
+.question-button:hover{
+  background-color: #1b74d3;
 }
 
 .answer-section-wrapper{
@@ -73,13 +78,13 @@ body{
 }
 
 .answer-button{
-  width: 25%;
-  font-size: 24px;
+  width: 45%;
+  font-size: 22px;
   color: #ffffff;
   background-color: #53052f;
-  border-radius:15px;
+  border-radius:16px;
   padding:5px;
-  border: 3px solid #ffffff;
+  border: 5px solid #ffffff;
   cursor:pointer;
   margin: auto;
 }
@@ -117,7 +122,7 @@ button:focus{
 .completed{
   display: flex;
   justify-content: center;
-  font-size: 40px;
+  font-size: 38px;
   color:black;
   margin: 40px auto;
 }
