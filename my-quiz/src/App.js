@@ -47,7 +47,8 @@ function App() {
             {QuestionsList[currentQuestion].answerList.map((answerOption) => (
               <li className="answer-list" key={uuidv4()}>
                 <button
-                  className="answer-button"
+                disabled={clicked}
+                  className={`answer-button ${clicked && answerOption.isCorrect ? "correct" : ""}`}
                   onClick={() => handleCorrectAnswer(answerOption.isCorrect)}
                 >
                   {answerOption.answer}
@@ -56,7 +57,11 @@ function App() {
             ))}
           </div>
           <div>
-            <button className="next-button" onClick={handleNextQuestion}>
+            <button 
+            className="next-button" 
+            onClick={handleNextQuestion}
+            disabled={!clicked}
+            >
               Next
             </button>
           </div>

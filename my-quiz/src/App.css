@@ -48,7 +48,7 @@ body{
 .question{
   color: white;
   border: 2px solid yellow;
-  background-color: #443d3d;
+  background-color: #1d1515;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 12px;
@@ -58,10 +58,6 @@ body{
   align-items: center;
   height: 60px;
   cursor:pointer;
-}
-
-.question-button:hover{
-  background-color: #1b74d3;
 }
 
 .answer-section-wrapper{
